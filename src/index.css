@@ -1,0 +1,141 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800&display=swap');
+
+
+/* virbals */
+:root {
+    /* colors */
+--hue:271;
+--frist-color:hsl(var(--hue), 76% , 53%);
+--title-color:hsl(var(--hue) , 4% , 26%);
+--text-color:hsl(var(--hue) , 4% , 38%);
+--body-color:hsl(var(--hue) , 4% , 99%);
+--container-color:hsl(var(--hue) , 4% , 95%);
+--border-color:hsl(var(--hue) , 4% , 91%);
+--white-color:hsl(var(--hue) , 4% , 100%);
+
+/* font family */
+--body-font: "Montserrat Alternates", sans-serif;
+
+}
+.dark-theme {
+  --title-color:hsl(var(--hue) , 4% , 100%);
+--text-color:hsl(var(--hue) , 4% , 80%);
+--body-color:hsl(var(--hue) , 4% , 8%);
+--container-color:hsl(var(--hue) , 4% , 12%);
+--border-color:hsl(var(--hue) , 4% , 16%);  
+}
+
+
+.grid {
+    display: grid;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+body {
+background-color: var(--body-color);
+color: var(--text-color);
+
+}
+h1,
+h2, 
+h3 {
+    color: var(--title-color);
+    font-weight: 800;
+}
+ul {
+    list-style: none;
+}
+a {
+text-decoration: none;
+}
+button,
+input, 
+textarea {
+background-color: transparent;
+border: none;
+outline: none;
+}
+img {
+display: block;
+max-width: 100%;
+
+}
+
+.botton {
+display: inline-block;
+color: var(--title-color);
+border: 1px solid var(--frist-color);
+padding: 10px 60px 10px 20px;
+border-radius: 20px;
+font-size: 18px;
+font-weight: 600;
+position: relative;
+overflow: hidden;
+transition: 0.4s ease;
+}
+.botton:hover {
+color: var(--white-color);
+
+}
+.botton::before {
+content: "";
+position: absolute;
+inset: 0;
+background-color: var(--frist-color);
+border-radius: inherit;
+z-index: -10;
+transform: translateX(100%);
+transition: 0.4s ease;
+
+}
+.botton:hover::before {
+transform: translateX(0);
+}
+.botton-icon {
+position: absolute;
+inset: -1px -1px -1px auto;
+background-color: var(--frist-color);
+aspect-ratio: 1/1;
+border-radius: 50%;
+color: var(--white-color);
+font-size: 22px;
+text-align: center;
+line-height: 50px;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+
+
+
+
+}
+.slick-dots li button:before {
+    color: var( --title-color) !important;
+}
+
+
+@media (max-width:1400px) {
+    .home-container {
+        grid-template-columns: 4fr 5fr;
+    }
+}
+   
+
+
+
+
+

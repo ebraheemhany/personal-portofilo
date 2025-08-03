@@ -1,0 +1,182 @@
+
+.contact_content {
+display: flex;
+
+justify-content: space-between;
+width: 100%;
+
+
+}
+.contact_left {
+margin: 50px;
+
+
+}
+.contact_content .left_ele {
+display: flex;
+align-items: center;
+gap: 60px;
+margin: 20px 0;
+
+}
+.contact_content .left_ele .icon {
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+background-color: rgba(233, 232, 232, 0.822);
+border-radius: 50%;
+cursor: pointer;
+position: relative;
+}
+.contact_content .left_ele .icon::before {
+content: "";
+position: absolute;
+top: 50%;
+right: -73%;
+width: 30px;
+height: 1px;
+background-color: rgba(233, 232, 232, 0.822);
+
+}
+.contact_content .left_ele .icon svg {
+color: black;
+font-size: 20px;
+margin-top: 10px;
+
+}
+.contact_left .text p {
+margin: 8px 0;
+}
+.contact_content .contact_right {
+width: 55%;
+position: relative;
+margin: 50px 0;
+
+}
+.contact_right .contact_massege {
+display: flex;
+flex-direction: column;
+
+}
+.contact_right .email_name {
+width: 100%;
+
+}
+.contact_right .email_name input {
+width: 40%;
+
+}
+.contact_right .contact_massege input,
+.contact_right .contact_massege textarea {
+background-color: rgba(233, 232, 232, 0.822);
+padding: 10px;
+margin: 10px ;
+border-radius: 10px;
+}
+.contact_right .contact_massege textarea {
+height: 100px;
+border-radius: 15px;
+}
+.contact_right .botton {
+position: absolute;
+right: 0;
+margin-top: 20px;
+}
+.contact_right .mss {
+text-align: end;
+font-size: 16px;
+color: rgba(146, 230, 21, 0.808);
+
+}
+
+@media(max-width:1050px) {
+.contact_right .botton {
+    right: 20px;
+}
+
+}
+@media(max-width:800px) {
+.contact_content {
+ display: block;
+ width: 90%;
+ margin: 100px auto 0 auto;
+
+}
+.contact_content .contact_right {
+    width: 100%;
+}
+
+}
+@media(max-width:500px) {
+
+.contact_content {
+  margin: 120px auto 0 auto;   
+}
+
+.contact_left .text p {
+font-size: 14px !important;
+
+}
+.title {
+    margin: 30px 0;
+}
+.contact_content .left_ele .text_P {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+ .contact_left {
+    margin: 0;
+ }
+.contact_right .email_name {
+display: flex;
+flex-direction: column;
+
+}
+.contact_right .email_name input {
+    width: 95%;
+   
+}
+}
+@media(max-width:360px) {
+    .contact_content .left_ele {
+gap: 20px;
+
+}
+.contact_content .left_ele .icon {
+width: 30px;
+height: 30px;
+line-height: 30px;
+
+}
+.contact_content .left_ele .icon svg {
+font-size: 15px;
+margin-top: 5px;
+}
+.contact_content .left_ele .icon::before {
+width: 15px;
+ right: -45%;
+}
+.contact_right .contact_massege input, 
+.contact_right .contact_massege textarea {
+    margin: 10px 0;
+}
+.contact_right .email_name input {
+    width: 100%;
+}
+.contact_right .botton {
+    right: 5px;
+}
+.title {
+    margin: 0;
+}
+}
+
+
+
+
+
+
+
+
