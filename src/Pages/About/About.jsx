@@ -110,7 +110,7 @@ export const About = () => {
 
         <div className="about-projects">
           <div className="about-card">
-            <h3>12+</h3>
+            <h3>3+</h3>
             <p>
               Years of <br /> Experience
             </p>
@@ -131,7 +131,7 @@ export const About = () => {
           </div>
 
           <div className="about-card">
-            <h3>12+</h3>
+            <h3>3+</h3>
             <p>
               Years of <br /> Experience
             </p>
