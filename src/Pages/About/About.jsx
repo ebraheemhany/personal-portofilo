@@ -1,5 +1,5 @@
 import React from "react";
-import Cv from "../../pdf/Copy of Ebraheem Hany (1).pdf";
+import Cv from "../../pdf/Ebraheem hany CV.pdf";
 import { RiDownload2Line } from "react-icons/ri";
 import { RiReactjsFill } from "react-icons/ri";
 import { RiJavascriptFill } from "react-icons/ri";
